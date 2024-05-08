@@ -16,23 +16,25 @@ function handleSubmit(event) {
     formData.append("image", image);
 
     // Example: Send form data to a server using fetch API
-    fetch("/submit-feedback", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => {
-        if (response.ok) {
+    //fetch("/submit-feedback", {
+        //method: "POST",
+        //body: formData
+   // })
+    //.then(response => {
+        //if (response.ok) {
             // Feedback submitted successfully
-            window.location.href = "success.html"; // Redirect to success page
-        } else {
+            //window.location.href = "success.html"; // Redirect to success page
+        //} else {
             // Error handling
-            alert("An error occurred. Please try again later.");
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-    });
+            //alert("An error occurred. Please try again later.");
+        //}
+    //})
+    //.catch(error => {
+        //console.error("Error:", error);
+        //alert("An error occurred. Please try again later.");
+    //});
+
+    window.location.href = "./success.html"; // Redirect to success page
 }
 
 // Add event listener for form submission
