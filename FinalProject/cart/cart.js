@@ -66,7 +66,14 @@ function calculateCartTotal(cart) {
   return total.toFixed(2); // Round to 2 decimal places
 }
 
+function sendToPayment()
+{
+  window.location.href = '../payment/index.html';
+}
+
 // Load products and initialize the cart display
 loadProducts().then(products => {
   displayCart();
+  let checkoutButton = document.getElementById("checkoutButton");
+  checkoutButton.addEventListener("click", sendToPayment);
 });
