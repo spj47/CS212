@@ -37,3 +37,10 @@ function handleSubmit(event) {
 
 // Add event listener for form submission
 document.getElementById("feedback-form").addEventListener("submit", handleSubmit);
+
+function sendToSuccess() {
+ window.location.href - '/Feedback/success.html';
+}
+
+
+
